@@ -1,0 +1,26 @@
+@import 'colors.scss';
+
+@font-face {
+    font-family: MetalLord;
+    src: url('assets/fonts/MetalLord.ttf');
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url('assets/fonts/Bahnschrift.ttf');
+}
+
+html {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAI0lEQVQYV2NkYGD4Ly4uzvDy5UsGEM0oLi7+H8YB0YwEVQAAytwWi3WV4jEAAAAASUVORK5CYII=") repeat;
+    background-size: 10px;
+    background-color: $background-color;
+    color: $primary-color;
+    accent-color: $accent-color;
+    outline-color: $accent-color;
+    scrollbar-color: $accent-color;
+    caret-color: $accent-color;
+    color-scheme: dark;
+    font-size: 1.5vw;
+    font-family: Bahnschrift;
+    user-select: none;
+}
