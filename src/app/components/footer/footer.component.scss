@@ -1,0 +1,12 @@
+#footer-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin-right: 1rem;
+    margin-bottom: 0.35rem;
+    column-gap: 0.35rem;
+}

@@ -1,0 +1,27 @@
+@import '../../../../colors.scss';
+
+form {
+    input {
+        border: none;
+        outline: 1px solid $white;
+        border-radius: 0;
+        background-color: transparentize($color: $white, $amount: 0.99);
+        font-size: 0.9rem;
+        padding: 0.275rem;
+        width: 20rem;
+    }
+
+    button {
+        border: none;
+        outline: 1px solid $white;
+        border-radius: 0;
+        background-color: transparentize($color: $white, $amount: 0.99);
+        font-size: 0.9rem;
+        padding: 0.275rem;
+        transition: 250ms;
+
+        &:hover {
+            transform: scale(1.030);
+        }
+    }
+}
