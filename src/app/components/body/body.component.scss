@@ -1,6 +1,11 @@
 #bookmarks {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;    
+    grid-template-columns: auto auto auto auto auto auto;
     gap: 15px;
     margin: 1rem;
+    align-items: center;
+
+    app-add-bookmark-item-button {
+        // display: flex;
+    }
 }

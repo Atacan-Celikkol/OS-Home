@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BookmarkItemComponent } from './components/body/bookmark-item/bookmark-item.component';
 import { CurrencyItemComponent } from './components/header/currencies/currency-item/currency-item.component';
 import { FooterBookmarkItemComponent } from './components/footer/footer-bookmark-item/footer-bookmark-item.component';
+import { AddBookmarkItemButtonComponent } from './components/body/add-bookmark-item-button/add-bookmark-item-button.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterBookmarkItemComponent } from './components/footer/footer-bookmark
     FooterComponent,
     BookmarkItemComponent,
     CurrencyItemComponent,
-    FooterBookmarkItemComponent
+    FooterBookmarkItemComponent,
+    AddBookmarkItemButtonComponent
   ],
   imports: [
     BrowserModule
