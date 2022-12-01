@@ -13,6 +13,7 @@ import { CurrencyItemComponent } from './components/header/currencies/currency-i
 import { FooterBookmarkItemComponent } from './components/footer/footer-bookmark-item/footer-bookmark-item.component';
 import { AddBookmarkItemButtonComponent } from './components/body/add-bookmark-item-button/add-bookmark-item-button.component';
 import { AddFooterBookmarkItemButtonComponent } from './components/footer/add-footer-bookmark-item-button/add-footer-bookmark-item-button.component';
+import { CommonComponentsModule } from './core/common-components/common-components.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AddFooterBookmarkItemButtonComponent } from './components/footer/add-fo
     AddFooterBookmarkItemButtonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

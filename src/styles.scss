@@ -23,4 +23,44 @@ html {
     font-size: 1.5vw;
     font-family: Bahnschrift;
     user-select: none;
+
+    @media (max-width: 991.98px) {
+        font-size: 100%
+    }
+}
+
+input.os-input {
+    background: transparent;
+    outline: 1px solid $primary-color;
+    border: none;
+
+    font-size: 0.85em;
+    padding: 0.35em;
+
+    box-sizing: border-box;
+
+    transition: 250ms;
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 0.25rem $primary-color;
+    }
+}
+
+button.os-button {
+    background: transparent;
+    outline: 1px solid $primary-color;
+    border: none;
+
+    font-size: 0.85em;
+    padding: 0.25em 0.45em;
+
+    box-sizing: border-box;
+
+    transition: 250ms;
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 0.25rem $primary-color;
+    }
 }
