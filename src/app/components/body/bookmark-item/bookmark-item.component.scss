@@ -1,4 +1,5 @@
 @import '../../../../colors.scss';
+@import "../../../../variables.scss";
 
 a {
     font-family: MetalLord;
@@ -16,7 +17,7 @@ a {
     width: 100%;
     height: 5rem;
 
-    transition: 250ms;
+    transition: $default-transition;
 
     &:hover {
         transform: scale(1.035);
