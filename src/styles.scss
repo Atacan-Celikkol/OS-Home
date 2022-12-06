@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'variables.scss';
 
 @font-face {
     font-family: MetalLord;
@@ -11,8 +12,8 @@
 }
 
 html {
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAI0lEQVQYV2NkYGD4Ly4uzvDy5UsGEM0oLi7+H8YB0YwEVQAAytwWi3WV4jEAAAAASUVORK5CYII=") repeat;
-    background-size: 10px;
+    background: $background-texture;
+    background-size: $background-size;
     background-color: $background-color;
     color: $primary-color;
     accent-color: $accent-color;
@@ -31,36 +32,48 @@ html {
 
 input.os-input {
     background: transparent;
-    outline: 1px solid $primary-color;
+    outline: $default-border-size solid $primary-color;
     border: none;
+    border-radius: $default-input-border-radius;
 
     font-size: 0.85em;
-    padding: 0.35em;
+    padding: 0.55em;
 
     box-sizing: border-box;
 
-    transition: 250ms;
+    transition: $default-transition;
 
-    &:hover {
+    &:hover,
+    &:focus {
         transform: scale(1.01);
-        box-shadow: 0 0 0.25rem $primary-color;
+        box-shadow: 0 0 0.55em;
     }
 }
 
 button.os-button {
     background: transparent;
-    outline: 1px solid $primary-color;
+    outline: $default-border-size solid;
     border: none;
+    border-radius: $default-input-border-radius;
 
     font-size: 0.85em;
-    padding: 0.25em 0.45em;
+    font-weight: bold;
+    padding: 0.45em 1.35em;
 
     box-sizing: border-box;
 
-    transition: 250ms;
+    transition: $default-transition;
 
     &:hover {
         transform: scale(1.01);
-        box-shadow: 0 0 0.25rem $primary-color;
+        box-shadow: 0 0 0.55em;
     }
+}
+
+.green {
+    color: $green;
+}
+
+.blue {
+    color: $blue;
 }

@@ -1,4 +1,5 @@
 @import '../../../../colors.scss';
+@import '../../../../variables.scss';
 
 .modal-wrapper {
     background-color: transparentize($color: $black, $amount: 0.5);
@@ -14,17 +15,17 @@
     align-items: center;
     justify-content: center;
 
+    font-size: 0.7rem;
+
     .modal {
-        background-color: transparentize($color: $black, $amount: 0.05);
-        box-shadow: 0 0 30px transparentize($color: $accent-color, $amount: 0.8);
-        outline: 2px solid $accent-color;
+        background: $background-texture;
+        background-size: $background-size;
+        box-shadow: 0 0 2em transparentize($color: $accent-color, $amount: 0.8);
+        outline: $default-border-size solid $accent-color;
         border-radius: 5px;
-        padding: 0.35rem;
+        padding: 0.45em;
 
-        font-size: 0.7rem;
-
-        min-width: 15rem;
-        // min-height: 6.5rem;
+        min-width: 20em;
 
         display: flex;
         flex-direction: column;
@@ -35,13 +36,17 @@
             justify-content: space-between;
             align-content: flex-start;
 
+            margin-bottom: 0.45em;
+            padding-bottom: 0.45em;
+            border-bottom: $default-border-size solid $accent-color;
+
             .modal-title {}
 
 
             .modal-window-controls {
 
                 button {
-                    transition: 250ms;
+                    transition: $default-transition;
                     font-size: 1em;
                     border: none;
 
@@ -64,11 +69,9 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            row-gap: 0.75em;
-            padding: 1em;
-
-            margin-top: 0.35rem;
-            border-top: 2px double $accent-color;
+            row-gap: 0.45em;
+            margin-bottom: 0.9em;
+            padding: 0 0.45em;
 
             input {
                 width: 100%;
@@ -76,11 +79,17 @@
         }
 
         .modal-footer {
-            display: flex;
-            align-items: center;
-            justify-content: end;
 
-            padding: 1em;
+            background-color: transparentize($color: $background-color, $amount: 0.5);            
+            border-radius: $default-border-radius;            
+            padding: 0.9em;
+
+            display: flex;
+            place-content: end center;
+            column-gap: 0.45em;
+
+            button {
+            }
         }
     }
 }
