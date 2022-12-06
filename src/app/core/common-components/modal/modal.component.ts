@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ModalComponent {
 
+  @Input() Icon: string | undefined;
+  @Input() Title: string | undefined;
+  @Input() Display = true;
+  @Output() DisplayChange = new EventEmitter<boolean>();
+
+  closeModal() {
+    this.DisplayChange.emit(!this.Display);
+  }
 }

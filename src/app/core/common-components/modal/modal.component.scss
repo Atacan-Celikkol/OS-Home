@@ -1,7 +1,18 @@
 @import '../../../../colors.scss';
 @import '../../../../variables.scss';
 
+$spacing: 0.45em;
+
 .modal-wrapper {
+
+    .modal-wrapper-background {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+
+        z-index: 101;
+    }
+
     background-color: transparentize($color: $black, $amount: 0.5);
     backdrop-filter: blur(3px);
     position: fixed;
@@ -9,7 +20,6 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
 
     display: flex;
     align-items: center;
@@ -18,12 +28,13 @@
     font-size: 0.7rem;
 
     .modal {
+        z-index: 102;
         background: $background-texture;
         background-size: $background-size;
         box-shadow: 0 0 2em transparentize($color: $accent-color, $amount: 0.8);
         outline: $default-border-size solid $accent-color;
         border-radius: 5px;
-        padding: 0.45em;
+        padding: $spacing;
 
         min-width: 20em;
 
@@ -36,11 +47,14 @@
             justify-content: space-between;
             align-content: flex-start;
 
-            margin-bottom: 0.45em;
-            padding-bottom: 0.45em;
+            margin-bottom: $spacing;
+            padding-bottom: $spacing;
             border-bottom: $default-border-size solid $accent-color;
 
-            .modal-title {}
+            .modal-title {
+                display: inline-flex;
+                gap: $spacing;
+            }
 
 
             .modal-window-controls {
@@ -69,9 +83,9 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            row-gap: 0.45em;
+            row-gap: $spacing;
             margin-bottom: 0.9em;
-            padding: 0 0.45em;
+            padding: 0 $spacing;
 
             input {
                 width: 100%;
@@ -80,16 +94,15 @@
 
         .modal-footer {
 
-            background-color: transparentize($color: $background-color, $amount: 0.5);            
-            border-radius: $default-border-radius;            
+            background-color: transparentize($color: $background-color, $amount: 0.5);
+            border-radius: $default-border-radius;
             padding: 0.9em;
 
             display: flex;
             place-content: end center;
-            column-gap: 0.45em;
+            column-gap: $spacing;
 
-            button {
-            }
+            button {}
         }
     }
 }

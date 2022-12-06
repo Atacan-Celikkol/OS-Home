@@ -17,7 +17,9 @@
     <app-bookmark-item></app-bookmark-item>
     <app-bookmark-item></app-bookmark-item>
     <app-bookmark-item></app-bookmark-item>
-    <app-add-bookmark-item-button></app-add-bookmark-item-button>
+    <app-add-bookmark-item-button (click)="showCreateBookmarkModal = true"></app-add-bookmark-item-button>
 </div>
 
-<app-modal></app-modal>
+<ng-container *ngIf="showCreateBookmarkModal">
+    <app-modal Icon="fa-regular fa-bookmark" Title="New Bookmark" [(Display)]="showCreateBookmarkModal"></app-modal>
+</ng-container>

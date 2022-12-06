@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent {
-
+  showCreateBookmarkModal = true;
 }

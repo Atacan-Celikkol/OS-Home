@@ -1,10 +1,14 @@
 <div class="modal-wrapper">
+    <div (click)="closeModal()" class="modal-wrapper-background"></div>
     <div class="modal">
         <div class="modal-header">
-            <span class="modal-title"> <i class="fa-regular fa-bookmark"></i> New Bookmark</span>
+            <span class="modal-title">
+                <i *ngIf="Icon" [class]="Icon"></i>
+                {{Title}}
+            </span>
 
             <div class="modal-window-controls">
-                <button class="modal-close-button"><i class="fa fa-times"></i></button>
+                <button (click)="closeModal()" class="modal-close-button"><i class="fa fa-times"></i></button>
             </div>
         </div>
 
@@ -15,7 +19,7 @@
             <input type="text" class="os-input">
             <span>Icon</span>
             <input type="text" class="os-input">
-        </div>        
+        </div>
 
         <div class="modal-footer">
             <button class="os-button blue">Save</button>
