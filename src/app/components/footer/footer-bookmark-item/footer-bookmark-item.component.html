@@ -1,4 +1,4 @@
 <div class="footer-bookmark-item-container">
-    <a href="https://google.com"><i class="fab fa-google"></i></a>
-    <span>Google</span>
+    <a [href]="bookmark.url"><i [style.color]="bookmark.color" [class]="bookmark.iconClasses"></i></a>
+    <span>{{bookmark.name}}</span>
 </div>

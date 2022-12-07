@@ -5,16 +5,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 0.25rem;
+    row-gap: 0.2em;
+
+    font-size: 1rem;
 
     a {
-        outline: 1px solid $primary-color;
+        outline: 0.075em solid $primary-color;
         border-radius: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 1.75rem;
-        width: 1.75rem;
+        height: 1.75em;
+        width: 1.75em;
         text-decoration: none;
         color: $primary-color;
 
@@ -22,12 +24,12 @@
 
         &:hover {
             transform: scale(1.025);
-            box-shadow: 0 0 0.25rem $primary-color;
+            box-shadow: 0 0 0.25em $primary-color;
         }
     }
 
     span {
-        font-size: 0.55rem;
-        font-weight: lighter;
+        font-size: 0.45em;
+        font-weight: 100;
     }
 }

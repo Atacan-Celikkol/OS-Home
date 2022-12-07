@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BookmarkService } from 'src/app/core/services/bookmark.service';
 
 @Component({
   selector: 'app-body',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent {
-  showCreateBookmarkModal = true;
+  showCreateBookmarkModal = false;
+
+  constructor(
+    public bookmarkService: BookmarkService,
+  ) { }
 }

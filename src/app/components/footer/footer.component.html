@@ -1,6 +1,5 @@
 <div id="footer-container">
     <app-add-footer-bookmark-item-button></app-add-footer-bookmark-item-button>
-    <app-footer-bookmark-item></app-footer-bookmark-item>
-    <app-footer-bookmark-item></app-footer-bookmark-item>
-    <app-footer-bookmark-item></app-footer-bookmark-item>
+    <app-footer-bookmark-item [bookmark]="bookmark" *ngFor="let bookmark of bookmarkService.FooterBookmarks">
+    </app-footer-bookmark-item>
 </div>

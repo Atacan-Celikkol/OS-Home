@@ -1,0 +1,126 @@
+{
+  "bookmarks": [
+    {
+      "name": "Google",
+      "url": "https://www.google.com/"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://tr.wikipedia.org/wiki/Anasayfa"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com"
+    },
+    {
+      "name": "Twitter",
+      "url": "http://twitter.com"
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://web.whatsapp.com/"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://youtube.com"
+    },
+    {
+      "name": "HepsiBurada",
+      "url": "https://www.hepsiburada.com/"
+    },
+    {
+      "name": "Trendyol",
+      "url": "https://trendyol.com"
+    },
+    {
+      "name": "Akakçe",
+      "url": "https://akakce.com"
+    },
+    {
+      "name": "BilimFili",
+      "url": "https://bilimfili.com"
+    },
+    {
+      "name": "Fizikist",
+      "url": "https://www.fizikist.com/"
+    },
+    {
+      "name": "PirateBay",
+      "url": "https://pirateproxy.live/"
+    },
+    {
+      "name": "Zamunda",
+      "url": "http://zamunda.net/"
+    },
+    {
+      "name": "Webrazzi",
+      "url": "https://webrazzi.com/"
+    },
+    {
+      "name": "W3Schools",
+      "url": "https://www.w3schools.com/"
+    },
+    {
+      "name": "HackerRank",
+      "url": "https://www.hackerrank.com/"
+    },
+    {
+      "name": "Modem",
+      "url": "http://192.168.2.1/login.html"
+    }
+  ],
+  "footer_bookmarks": [
+    {
+      "name": "Spotify",
+      "url": "https://open.spotify.com",
+      "iconClasses": "fab fa-spotify",
+      "color": "#3e2"
+    },
+    {
+      "name": "Outlook",
+      "url": "https://outlook.live.com/mail/inbox",
+      "iconClasses": "far fa-envelope",
+      "color": "#127CD6"
+    },
+    {
+      "name": "GMail",
+      "url": "https://mail.google.com/mail",
+      "iconClasses": "far fa-envelope",
+      "color": "#e3463d"
+    },
+    {
+      "name": "Azure",
+      "url": "https://portal.azure.com/",
+      "iconClasses": "fab fa-windows",
+      "color": "#0656d1"
+    },
+    {
+      "name": "AWS",
+      "url": "https://console.aws.amazon.com",
+      "iconClasses": "fab fa-aws warning",
+      "color": "#f29100"
+    },
+    {
+      "name": "GitLab",
+      "url": "https://gitlab.linktera.xyz/groups/product/linkpara/-/boards",
+      "iconClasses": "fab fa-gitlab orange",
+      "color": "#d64027"
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/Atacan-Celikkol",
+      "iconClasses": "fab fa-github",
+      "color": ""
+    },
+    {
+      "name": "VS Geek",
+      "url": "https://geek.visualstudio.com",
+      "iconClasses": "fab fa-git",
+      "color": ""
+    }
+  ]
+}
