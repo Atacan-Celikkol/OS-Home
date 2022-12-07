@@ -6,14 +6,11 @@ $padding: 0.275rem;
 form {
     input {
         border: $default-border-size solid;
-        // border-right: none;
         border-radius: 0;
         padding: $padding;
         width: 20rem;
         &:hover {
             margin-right: 0.35rem;
-
-            // margin-right: calc($default-border-size * 1.030);
             transform: scale(1.030);
         }
     }
@@ -25,8 +22,7 @@ form {
         padding: $padding;
 
         &:hover {
-            margin-left: calc(100% / 1.030);
-            transform: scale(1.030);
+            transform: translateX(calc((100% * 1.030) / 100)) scale(1.030);
         }
     }
 }
