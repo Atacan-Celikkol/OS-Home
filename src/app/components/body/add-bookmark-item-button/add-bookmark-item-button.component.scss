@@ -5,16 +5,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
-    outline: 1px solid $primary-color;
-    border: none;
+    background-color: transparentize($color: $black, $amount: 0.5);
+    border: $default-border-size solid $primary-color;
+    
     height: 1.25rem;
     width: 1.25rem;
 
     transition: $default-transition;
 
     &:hover {
-        transform: scale(1.025);
-        box-shadow: 0 0 0.25rem $primary-color;
+        transform: scale(1.035);
+        box-shadow: 0 0 0.5em;
+        text-shadow: 0 0 0.5em;
     }
 }

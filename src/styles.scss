@@ -26,11 +26,14 @@ html {
     user-select: none;
 }
 
-input.os-input {
+input {
     background: transparent;
-    outline: $default-border-size solid $primary-color;
-    border: none;
+    border: $default-border-size solid;
+
+    .os-input {
+        
     border-radius: $default-input-border-radius;
+    }
 
     font-size: 0.85em;
     padding: 0.55em;
@@ -39,6 +42,10 @@ input.os-input {
 
     transition: $default-transition;
 
+    &:focus-visible {
+        outline: none;
+    }
+
     &:hover,
     &:focus {
         transform: scale(1.01);
@@ -46,23 +53,26 @@ input.os-input {
     }
 }
 
-button.os-button {
-    background: transparent;
-    outline: $default-border-size solid;
-    border: none;
-    border-radius: $default-input-border-radius;
+button {
+    cursor: pointer;
 
-    font-size: 0.85em;
-    font-weight: bold;
-    padding: 0.45em 1.35em;
+    &.os-button {
+        background: transparent;
+        border: $default-border-size solid;
+        border-radius: $default-input-border-radius;
 
-    box-sizing: border-box;
+        font-size: 0.85em;
+        font-weight: bold;
+        padding: 0.45em 1.35em;
 
-    transition: $default-transition;
+        box-sizing: border-box;
 
-    &:hover {
-        transform: scale(1.01);
-        box-shadow: 0 0 0.55em;
+        transition: $default-transition;
+
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 0.55em;
+        }
     }
 }
 

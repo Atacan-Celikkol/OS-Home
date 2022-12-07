@@ -3,7 +3,7 @@
 
 a {
     font-family: MetalLord;
-    background-color: transparentize($color: $black, $amount: 0.1);
+    background-color: transparentize($color: $black, $amount: 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,8 +13,7 @@ a {
 
     text-decoration: none;
 
-    outline: 1px solid $primary-color;
-    width: 100%;
+    border: $default-border-size solid;
     height: 4.75rem;
     min-height: 10vh;
 
@@ -22,7 +21,7 @@ a {
 
     &:hover {
         transform: scale(1.035);
-        box-shadow: 0 0 0.5em $primary-color;
-        text-shadow: 0 0 0.5em $primary-color;
+        box-shadow: 0 0 0.5em;
+        text-shadow: 0 0 0.5em;
     }
 }

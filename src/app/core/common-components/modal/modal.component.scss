@@ -4,13 +4,16 @@
 $spacing: 0.45em;
 
 .modal-wrapper {
+    z-index: 1000;
 
     .modal-wrapper-background {
+        top: 0;
+        left: 0;
         position: fixed;
         height: 100%;
         width: 100%;
 
-        z-index: 101;
+        z-index: 1001;
     }
 
     background-color: transparentize($color: $black, $amount: 0.5);
@@ -28,11 +31,11 @@ $spacing: 0.45em;
     font-size: 0.7rem;
 
     .modal {
-        z-index: 102;
+        z-index: 1002;
         background: $background-texture;
         background-size: $background-size;
         box-shadow: 0 0 2em transparentize($color: $accent-color, $amount: 0.8);
-        outline: $default-border-size solid $accent-color;
+        border: $default-border-size solid $accent-color;
         border-radius: 5px;
         padding: $spacing;
 

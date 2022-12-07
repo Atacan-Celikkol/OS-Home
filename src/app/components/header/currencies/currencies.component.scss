@@ -1,4 +1,5 @@
 @import '../../../../colors.scss';
+@import "../../../../variables.scss";
 
 
 
@@ -10,9 +11,9 @@
     span {
         font-weight: 600;
         color: $primary-color;
-        border-bottom: 2px solid $accent-color;
+        border-bottom: $default-border-size solid $accent-color;
         padding-bottom: 0.25rem;
-        width: 17rem;
+        width: 16.5rem;
     }
 
     #currency-items-container {

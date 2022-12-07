@@ -2,12 +2,12 @@
 
 h1 {
     font-family: MetalLord;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: normal;
     margin: 0;
 
     background: -webkit-linear-gradient($black, $white, $black);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px transparentize($color: $white, $amount: 0.5);
+    -webkit-text-stroke: 1px transparentize($color: $white, $amount: 0.35);
 }

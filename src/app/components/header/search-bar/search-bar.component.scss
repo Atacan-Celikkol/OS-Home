@@ -1,27 +1,31 @@
 @import '../../../../colors.scss';
 @import '../../../../variables.scss';
 
+$padding: 0.275rem;
+
 form {
     input {
-        border: none;
-        outline: 1px solid $white;
+        border: $default-border-size solid;
+        // border-right: none;
         border-radius: 0;
-        background-color: transparentize($color: $white, $amount: 0.99);
-        font-size: 0.9rem;
-        padding: 0.275rem;
+        padding: $padding;
         width: 20rem;
+        &:hover {
+            margin-right: 0.35rem;
+
+            // margin-right: calc($default-border-size * 1.030);
+            transform: scale(1.030);
+        }
     }
 
     button {
-        border: none;
-        outline: 1px solid $white;
+        margin-left: -$default-border-size;
+        border: $default-border-size solid;
         border-radius: 0;
-        background-color: transparentize($color: $white, $amount: 0.99);
-        font-size: 0.9rem;
-        padding: 0.275rem;
-        transition: $default-transition;
+        padding: $padding;
 
         &:hover {
+            margin-left: calc(100% / 1.030);
             transform: scale(1.030);
         }
     }
