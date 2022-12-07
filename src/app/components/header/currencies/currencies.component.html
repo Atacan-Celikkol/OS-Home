@@ -1,8 +1,16 @@
 <div id="currencies-container">
     <span>Exchange Rates</span>
     <div id="currency-items-container">
-        <app-currency-item *ngFor="let item of preferredCurrencies" sign="{{item}}"
-            amount="{{(1 / data.rates[item]).toFixed(2)}}">
-        </app-currency-item>
+
+        <ng-container *ngIf="data; else Loading">
+            <app-currency-item *ngFor="let item of preferredCurrencies" sign="{{item}}"
+                amount="{{(1 / data.rates[item]).toFixed(2)}}">
+            </app-currency-item>
+        </ng-container>
+
+        <ng-template #Loading>
+            Loading...
+        </ng-template>
+
     </div>
 </div>

@@ -21,10 +21,12 @@ export class CurrenciesComponent {
   ];
 
   constructor(
-    private currencyService: CurrencyService
+    currencyService: CurrencyService
   ) {
-    currencyService.getCurrencies().subscribe(x => {
-      this.data = x;
-    });
+    setTimeout(() => {
+      currencyService.getCurrencies().subscribe(x => {
+        this.data = x;
+      });
+    }, 250);
   }
 }
