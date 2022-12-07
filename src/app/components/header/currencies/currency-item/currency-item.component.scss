@@ -3,14 +3,23 @@
 .currency-container {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.15em;
+
     .currency-sign-container {
         display: flex;
         justify-content: center;
         align-items: center;
 
         background-color: $accent-color;
-        height: 1.5rem;
-        width: 1.5rem;        
+        height: 1.5em;
+        width: 1.5em;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .currency-value {
+        font-weight: bold;
     }
 }

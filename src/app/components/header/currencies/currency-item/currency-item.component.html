@@ -1,6 +1,11 @@
 <div class="currency-container">
     <div class="currency-sign-container">
-        <span>{{sign}}</span>
+        <!-- <span>{{sign}}</span> -->
+        <span *ngIf="sign === 'USD'">$</span>
+        <span *ngIf="sign === 'EUR'">€</span>
+        <span *ngIf="sign === 'GBP'">£</span>
+        <span *ngIf="sign === 'JPY'">¥</span>
+        <span *ngIf="sign === 'BTC'">฿</span>
     </div>
     <span class="currency-value">
         {{amount}}
