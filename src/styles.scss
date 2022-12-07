@@ -24,10 +24,6 @@ html {
     font-size: 1.5vw;
     font-family: Bahnschrift;
     user-select: none;
-
-    @media (max-width: 991.98px) {
-        font-size: 100%
-    }
 }
 
 input.os-input {
