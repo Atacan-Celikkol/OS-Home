@@ -8,8 +8,4 @@ import { Bookmark } from 'src/app/core/models/bookmark';
 })
 export class FooterBookmarkItemComponent {
   @Input() bookmark!: Bookmark;
-
-  ngOnInit() {
-    console.log(this.bookmark);    
-  }
 }
