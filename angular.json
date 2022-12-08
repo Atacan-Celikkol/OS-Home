@@ -27,12 +27,22 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
+              "src/OttoStudio.png",
+              "src/manifest.json",
               "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "optimization": {
+              "fonts": true,
+              "scripts": true,
+              "styles": {
+                "inlineCritical": false,
+                "minify": true
+              }
+            }
           },
           "configurations": {
             "production": {

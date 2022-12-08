@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "OttoStudio - Homepage",
+    "version": "1",
+    "description": "Home sweet home.",
+    "action": {
+        "default_icon": "OttoStudio.png",
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "128": "OttoStudio.png"
+    },
+    "permissions": [
+        "management",
+        "history"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}
