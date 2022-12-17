@@ -1,0 +1,15 @@
+<div class="context-menu-wrapper" *ngIf="Display">
+    <div (click)="hide($event)" (contextmenu)="hide($event)" class="context-menu-wrapper-background"></div>
+    <div class="context-menu" #ContextMenu [style.top]="y" [style.left]="x">
+        <ng-container *ngFor="let item of menuItems">
+            <ng-container *ngTemplateOutlet="MenuItem; context: { $implicit: item }"></ng-container>
+        </ng-container>
+    </div>
+</div>
+
+<ng-template #MenuItem let-item let-close="close">
+    <div class="context-menu-item" (click)="item.handler(subject); hide()" [style.opacity]="item.disabled ? '0.5' : ''">
+        <i [class]="item.icon" *ngIf="item.icon"></i>
+        <span>{{item.name}}</span>
+    </div>
+</ng-template>

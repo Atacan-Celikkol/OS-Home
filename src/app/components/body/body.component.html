@@ -1,8 +1,13 @@
 <div id="bookmarks">
-    <app-bookmark-item [bookmark]="bookmark" *ngFor="let bookmark of bookmarkService.Bookmarks"></app-bookmark-item>
+    <app-bookmark-item *ngFor="let bookmark of bookmarkService.Bookmarks" [bookmark]="bookmark" [osContextMenu]="menu"
+        [osContextMenuSubject]="bookmark">
+    </app-bookmark-item>
     <app-add-bookmark-item-button (click)="showCreateBookmarkModal = true"></app-add-bookmark-item-button>
 </div>
 
 <ng-container *ngIf="showCreateBookmarkModal">
     <app-modal Icon="far fa-bookmark" Title="New Bookmark" [(Display)]="showCreateBookmarkModal"></app-modal>
 </ng-container>
+
+
+<app-context-menu #menu [menuItems]="menuItems"></app-context-menu>

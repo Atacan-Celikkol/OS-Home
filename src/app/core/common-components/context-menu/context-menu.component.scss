@@ -1,0 +1,64 @@
+@import '../../../../colors.scss';
+@import '../../../../variables.scss';
+
+$spacing: 0.45em;
+
+.context-menu-wrapper {
+    z-index: 1000;
+
+    .context-menu-wrapper-background {
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+
+        z-index: 1001;
+    }
+
+    // background-color: transparentize($color: $black, $amount: 0.5);
+    // backdrop-filter: blur(3px);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.6rem;
+    font-weight: 100;
+
+    .context-menu {
+        z-index: 1002;
+        position: fixed;
+        background: $background-texture;
+        background-size: $background-size;
+        box-shadow: 0 0 2em transparentize($color: $accent-color, $amount: 0.8);
+        border: $default-border-size solid $accent-color;
+        border-radius: 5px;
+        padding: $spacing;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: $spacing;
+
+        .context-menu-item {
+            padding: 0.25em;
+            border-bottom: $default-border-size solid;
+
+            i {
+                margin-right: 0.5em;
+            }
+
+            span {}
+
+            &:hover {
+                background-color: transparentize($color: $accent-color, $amount: 0.8);
+            }
+        }
+    }
+}
