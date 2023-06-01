@@ -1,12 +1,13 @@
-<div id="bookmarks">
-    <app-bookmark-item *ngFor="let bookmark of bookmarkService.Bookmarks" [bookmark]="bookmark" [osContextMenu]="menu"
-        [osContextMenuSubject]="bookmark">
-    </app-bookmark-item>
-    <app-add-bookmark-item-button (click)="showCreateBookmarkModal = true"></app-add-bookmark-item-button>
+<div id="bookmarks" dragula="Bookmarks" [dragulaModel]="bookmarks"
+     (dragulaModelChange)="bookmarkService.updateBookmarks($event)">
+  <app-bookmark-item *ngFor="let bookmark of bookmarks" [bookmark]="bookmark" [osContextMenu]="menu"
+                     [osContextMenuSubject]="bookmark">
+  </app-bookmark-item>
+  <app-add-bookmark-item-button (click)="showCreateBookmarkModal = true"></app-add-bookmark-item-button>
 </div>
 
 <ng-container *ngIf="showCreateBookmarkModal">
-    <app-modal Icon="far fa-bookmark" Title="New Bookmark" [(Display)]="showCreateBookmarkModal"></app-modal>
+  <app-modal Icon="far fa-bookmark" Title="New Bookmark" [(Display)]="showCreateBookmarkModal"></app-modal>
 </ng-container>
 
 

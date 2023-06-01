@@ -15,6 +15,7 @@ import { FooterBookmarkItemComponent } from './components/footer/footer-bookmark
 import { AddBookmarkItemButtonComponent } from './components/body/add-bookmark-item-button/add-bookmark-item-button.component';
 import { AddFooterBookmarkItemButtonComponent } from './components/footer/add-footer-bookmark-item-button/add-footer-bookmark-item-button.component';
 import { CommonComponentsModule } from './core/common-components/common-components.module';
+import {DragulaModule} from "ng2-dragula";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CommonComponentsModule } from './core/common-components/common-componen
   imports: [
     BrowserModule,
     HttpClientModule,
-    CommonComponentsModule
+    CommonComponentsModule,
+    DragulaModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
