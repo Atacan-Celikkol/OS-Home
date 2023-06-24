@@ -30,7 +30,7 @@ export class CurrencyService {
 
   //#region Should be moved to a base service
   handleError(err: any) {
-    let errorMessage = '';
+    let errorMessage: string;
     if (err.error instanceof ErrorEvent) {
       // Get client-side error
       errorMessage = err.error.message;
